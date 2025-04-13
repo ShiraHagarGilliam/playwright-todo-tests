@@ -45,19 +45,16 @@ The tests are organized in 5 different files, each with its own focus:
 | `persistence.spec.js` | Make sure tasks stay after refresh |
 | `edge-cases.spec.js` | Special cases like empty input, long text, emojis, etc. |
 
-Each test is written in simple English and has comments to explain what is happening.
-
 ---
 
 ## ⚠️ Edge Cases Covered
 
-- Add empty todo (blocked)
-- Add todo with only spaces (blocked)
-- Add very long todo (works fine)
-- Add todo with emojis and symbols (works fine)
-- Press Enter twice (does not add twice)
-- Edit todo to empty text (deletes it)
-- Press Escape during edit (cancels the change)
+- Not allowing adding empty todo
+- Not allowing adding todo with only spaces
+- Adding very long todo
+- Adding todo with emojis and symbols
+- Pressing Enter twice does not create duplicate todo item
+- Deleting todo item when edited to contain only empty text
 
 ---
 
