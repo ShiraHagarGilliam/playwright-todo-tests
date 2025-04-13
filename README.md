@@ -60,13 +60,10 @@ The tests are organized in 5 different files, each with its own focus:
 
 ## 💬 Challenges Faced
 
-At first, I didn't know how to:
-- Use filters correctly (All, Active, Completed)
-- Check task text inside lists
-- Handle edge cases like double Enter or empty edits
+I didn’t have much background in testing, and I had never used Playwright before.
+I had to learn everything from scratch — how to write tests, organize them, and use the Page Object Model.
 
-I solved these problems by learning slowly and testing step by step.  
-I also used Playwright documentation to understand the best way to write reliable tests.
+Understanding the differences between unit, functional, and end-to-end tests was also a challenge, but I figured it out by reading documentation and trying things step by step.
 
 ---
 
