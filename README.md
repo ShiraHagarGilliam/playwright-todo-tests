@@ -1,8 +1,9 @@
 # playwright-todo-tests ✅
 
-This project is a test automation suite for the [TodoMVC App](https://demo.playwright.dev/todomvc/), built using [Playwright](https://playwright.dev/).
+This project is a full Playwright-based automation suite for the [TodoMVC App](https://demo.playwright.dev/todomvc/).  
+It includes end-to-end, functional, and unit tests, all structured using the **Page Object Model (POM)**.
 
-It was created as part of the home assignment for the Shift Security CO-OP program.
+The project was built from scratch as part of the Shift Security CO-OP home assignment.
 
 ---
 
@@ -13,7 +14,6 @@ To install the project and run the tests, use these commands:
 ```bash
 npm install
 npx playwright install
-```
 
 ---
 
@@ -35,15 +35,14 @@ npx playwright show-report
 
 ## 🗂 Test Organization
 
-The tests are organized in 5 different files, each with its own focus:
+The tests are organized by type:
 
-| File Name | What it Tests |
-|-----------|----------------|
-| `todo-management.spec.js` | Add, edit, delete, complete a task |
-| `filtering.spec.js` | Filter tasks (All, Active, Completed) |
-| `batch-operations.spec.js` | Mark all complete, clear completed |
-| `persistence.spec.js` | Make sure tasks stay after refresh |
-| `edge-cases.spec.js` | Special cases like empty input, long text, emojis, etc. |
+| Folder              | What it Contains                                               |
+|---------------------|----------------------------------------------------------------|
+| `tests/unit`        | Basic edge case validation (empty inputs, long strings, etc.) |
+| `tests/functional`  | Core app functionality like add/edit/delete/filter            |
+| `tests/e2e`         | End-to-end flows and persistence checks                        |
+| `pages/TodoPage.js` | Page Object Model (POM) abstraction for todos                 |
 
 ---
 
@@ -69,13 +68,14 @@ Understanding the differences between unit, functional, and end-to-end tests was
 
 ## 📈 Extra Features (Bonus)
 
-You can run this command to open a detailed test report:
+✅ **Visual testing** – checking visibility of UI elements when the page loads (like input field, toggle-all checkbox, and filters)  
+✅ **Cross-browser testing** – tests run on Chromium, Firefox, and WebKit using Playwright’s built-in support
+✅ **CI setup with GitHub Actions** – tests run automatically on every push to the main branch  
+✅ **HTML test reporting** – view results in the browser with:
 
 ```bash
 npx playwright show-report
 ```
-
-This opens a full HTML report in your browser with all test results.
 
 ---
 
