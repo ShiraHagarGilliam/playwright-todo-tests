@@ -14,6 +14,7 @@ To install the project and run the tests, use these commands:
 ```bash
 npm install
 npx playwright install
+```
 
 ---
 
@@ -69,7 +70,7 @@ Understanding the differences between unit, functional, and end-to-end tests was
 ## 📈 Extra Features (Bonus)
 
 ✅ **Visual testing** – checking visibility of UI elements when the page loads (like input field, toggle-all checkbox, and filters)  
-✅ **Cross-browser testing** – tests run on Chromium, Firefox, and WebKit using Playwright’s built-in support
+✅ **Cross-browser testing** – tests run on Chromium, Firefox, and WebKit using Playwright’s built-in support  
 ✅ **CI setup with GitHub Actions** – tests run automatically on every push to the main branch  
 ✅ **HTML test reporting** – view results in the browser with:
 
